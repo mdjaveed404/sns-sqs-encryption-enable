@@ -69,7 +69,7 @@ def encrypt_sqs(queueurl):
         response = sqs.set_queue_attributes(
             QueueUrl = url,
             Attributes = {
-                'KmsMasterKeyId' : 'arn:aws:kms:us-east-1:508783485521:key/d511ee60-48b9-43fb-9d7d-ddd854737a58'
+                'KmsMasterKeyId' : 'alias/aws/sqs'
             }
         )
     
